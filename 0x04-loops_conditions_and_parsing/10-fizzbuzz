@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
-#  Script bach FizzBuzz
-conter=1
-while [ $conter -le 100 ];
+# displays Holberton School 10 times.
+
+COUNTER=1
+while [ $COUNTER -lt 101 ]
 do
-if [ $((conter%3)) == 0 -a $((conter%5)) == 0 ]
-then
-    echo "FizzBuzz"
-elif [ $((conter%3)) == 0 ]
-then
-    echo "Fizz"
-elif [ $((conter%5)) == 0 ]
-then
-    echo "Buzz"
-else
-    echo $conter
-fi
-    let conter=conter+1
+    if [ $((COUNTER%15)) = 0 ]
+    then
+        echo "FizzBuzz"
+    elif [ $((COUNTER%3)) = 0 ]
+    then
+        echo "Fizz"
+    elif [ $((COUNTER%5)) = 0 ]
+    then
+        echo "Buzz"
+    else
+        echo "$COUNTER"
+    fi
+    let COUNTER+=1
 done

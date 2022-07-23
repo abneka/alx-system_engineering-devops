@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
-# script displaying " good luck" "Holberton School" "bad luck" 
-CONTER=0
-while [ $CONTER -lt 10 ];
+# displays Holberton School 10 times.
+
+COUNTER=1
+while [ $COUNTER -lt 11 ]
 do
-    if [ $CONTER -eq 3 ]
+    if [ $COUNTER = 4 ]
     then
-echo "bad luck"
-    elif [ $CONTER -eq 7 ]
+        echo "bad luck"
+    elif [ $COUNTER = 8 ]
     then
-echo "good luck"
+        echo "good luck"
     else
-echo "Holberton School"
+        echo "Holberton School"
     fi
-    let CONTER=CONTER+1
+    let COUNTER+=1
 done

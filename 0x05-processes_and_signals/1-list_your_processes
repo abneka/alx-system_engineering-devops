@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# print all the process
-ps auxf
+# Displays the current running processes, in a user-oriented format.
+
+ps -faux
